@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DS Job Tracker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">DS Job Tracker</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="welcome">WELCOME TO DS JOB TRACKER</p>
+
+                <h1>
+                    Organize Your
+                    <span>Job Search</span>
+                </h1>
+
+                <p class="description">
+                    Track your job applications, manage interviews,
+                    and keep your career journey organized in one place.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="dashboard.html" class="btn-primary">Get Started</a>
+                    <button class="secondary-btn" onclick="openLearnMore()">Learn More</button>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="card-header">
+                    <h3>Application Overview</h3>
+                    <span id="homeYear">2026</span>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat-box">
+                            <h2 id="homeApplications">0</h2>
+                            <p>Applications</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h2 id="homeInterviews">0</h2>
+                            <p>Interviews</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h2 id="homeSelected">0</h2>
+                            <p>Selected</p>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <p>Job Search Progress</p>
+
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+
+                    <span id="homeProgressText">65% organized</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="features" id="features">
+
+            <h2>Everything You Need</h2>
+
+            <p class="section-text">
+                Manage your job applications easily and stay organized.
+            </p>
+
+            <div class="feature-container">
+
+                <div class="feature-card">
+                    <div class="icon">📋</div>
+                    <h3>Application Tracking</h3>
+                    <p>
+                        Track your applications from Saved and Applied
+                        to Interview, Selected or Rejected.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📅</div>
+                    <h3>Interview Management</h3>
+                    <p>
+                        Keep your interview dates, times and interview
+                        types organized in one place.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🎯</div>
+                    <h3>Job Preparation Guide</h3>
+                    <p>
+                        Get IT-focused skills, learning topics and
+                        interview preparation guidance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📄</div>
+                    <h3>CV Matching</h3>
+                    <p>
+                        Compare your CV with job requirements and
+                        identify matching and missing skills.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">✅</div>
+                    <h3>Application Checklist</h3>
+                    <p>
+                        Check your CV, cover letter, portfolio,
+                        certificates and interview preparation.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🕒</div>
+                    <h3>Application Timeline</h3>
+                    <p>
+                        View the important stages and progress of
+                        each job application.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Learn More Modal -->
+
+<div id="learnMoreModal" class="modal">
+
+    <div class="modal-content learn-more-content">
+
+        <span class="close" onclick="closeLearnMore()">
+            &times;
+        </span>
+
+        <h2>About DS Job Tracker</h2>
+
+        <p>
+            DS Job Tracker is a smart job application management system
+            designed to help job seekers organize and manage their
+            job applications in one place.
+        </p>
+
+        <div class="learn-more-section">
+
+            <h3>📌 Main Features</h3>
+
+            <ul>
+                <li>Job application tracking</li>
+                <li>Application status management</li>
+                <li>Interview date, time and type tracking</li>
+                <li>Notes and next-action management</li>
+                <li>Application timeline</li>
+                <li>Job preparation guidance</li>
+                <li>Application checklist</li>
+                <li>CV Match</li>
+                <li>Application statistics dashboard</li>
+            </ul>
+
+        </div>
+
+        <div class="learn-more-section">
+
+            <h3>📄 CV Match</h3>
+
+            <p>
+                The CV Match feature allows users to upload their CV
+                in PDF or TXT format and compare it with the selected
+                job role.
+            </p>
+
+            <p>
+                Currently supported roles:
+            </p>
+
+            <div class="role-tags">
+                <span>Software QA</span>
+                <span>Software Engineer</span>
+                <span>Business Analyst</span>
+                <span>Frontend Developer</span>
+                <span>Data Analyst</span>
+            </div>
+
+        </div>
+
+        <div class="learn-more-section">
+
+            <h3>🛠️ Technologies</h3>
+
+            <p>
+                HTML • CSS • JavaScript • LocalStorage • PDF.js
+            </p>
+
+        </div>
+
+        <div class="learn-more-section">
+
+            <h3>🎯 Purpose</h3>
+
+            <p>
+                The goal of this project is to make job application
+                tracking more organized while helping users prepare
+                for different IT career opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <footer>
+        <p>© 2026 DS Job Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
