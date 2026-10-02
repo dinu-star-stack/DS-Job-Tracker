@@ -1,0 +1,13 @@
+name: My FIrst CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "My first CI/CD workflow is working!"
